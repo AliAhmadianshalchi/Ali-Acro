@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,12 @@
 		0D255AA32680FE0200964913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D255AA12680FE0200964913 /* LaunchScreen.storyboard */; };
 		0D255AAE2680FE0200964913 /* Ali_AcroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D255AAD2680FE0200964913 /* Ali_AcroTests.swift */; };
 		0D255AB92680FE0200964913 /* Ali_AcroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D255AB82680FE0200964913 /* Ali_AcroUITests.swift */; };
+		0D6860CE268102AE004A52C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6860CD268102AE004A52C2 /* Constants.swift */; };
+		0D6860D02681041D004A52C2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6860CF2681041D004A52C2 /* API.swift */; };
+		0D6860D2268104E7004A52C2 /* AcroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6860D1268104E7004A52C2 /* AcroModel.swift */; };
+		82A82FEC43BC67850E3306D7 /* Pods_Ali_AcroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E21BA9F846FFA5EDD311A7 /* Pods_Ali_AcroTests.framework */; };
+		A0806ECAE305A3D2368B2827 /* Pods_Ali_Acro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D1D4FAA5C072986F308CBF4 /* Pods_Ali_Acro.framework */; };
+		AB569489C665DEECFB8E1B33 /* Pods_Ali_Acro_Ali_AcroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468A41F58E7689F586ACA569 /* Pods_Ali_Acro_Ali_AcroUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AB48DC77557504FE2151809 /* Pods-Ali Acro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ali Acro.debug.xcconfig"; path = "Target Support Files/Pods-Ali Acro/Pods-Ali Acro.debug.xcconfig"; sourceTree = "<group>"; };
 		0D255A932680FE0000964913 /* Ali Acro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ali Acro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D255A962680FE0000964913 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D255A982680FE0000964913 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,18 @@
 		0D255AB42680FE0200964913 /* Ali AcroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ali AcroUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D255AB82680FE0200964913 /* Ali_AcroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ali_AcroUITests.swift; sourceTree = "<group>"; };
 		0D255ABA2680FE0200964913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D6860CD268102AE004A52C2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0D6860CF2681041D004A52C2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		0D6860D1268104E7004A52C2 /* AcroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcroModel.swift; sourceTree = "<group>"; };
+		0D6860D426810FBC004A52C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		2FA3E8D0D24BE609CD5443C7 /* Pods-Ali AcroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ali AcroTests.release.xcconfig"; path = "Target Support Files/Pods-Ali AcroTests/Pods-Ali AcroTests.release.xcconfig"; sourceTree = "<group>"; };
+		43466626A10B0F4E995DFDF5 /* Pods-Ali Acro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ali Acro.release.xcconfig"; path = "Target Support Files/Pods-Ali Acro/Pods-Ali Acro.release.xcconfig"; sourceTree = "<group>"; };
+		468A41F58E7689F586ACA569 /* Pods_Ali_Acro_Ali_AcroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ali_Acro_Ali_AcroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7256A9342C9ADE75BE9602C4 /* Pods-Ali Acro-Ali AcroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ali Acro-Ali AcroUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ali Acro-Ali AcroUITests/Pods-Ali Acro-Ali AcroUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		80B99002E49481562D066F59 /* Pods-Ali AcroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ali AcroTests.debug.xcconfig"; path = "Target Support Files/Pods-Ali AcroTests/Pods-Ali AcroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D1D4FAA5C072986F308CBF4 /* Pods_Ali_Acro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ali_Acro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9930A125BC9E2E8D65421304 /* Pods-Ali Acro-Ali AcroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ali Acro-Ali AcroUITests.release.xcconfig"; path = "Target Support Files/Pods-Ali Acro-Ali AcroUITests/Pods-Ali Acro-Ali AcroUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A3E21BA9F846FFA5EDD311A7 /* Pods_Ali_AcroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ali_AcroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0806ECAE305A3D2368B2827 /* Pods_Ali_Acro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82A82FEC43BC67850E3306D7 /* Pods_Ali_AcroTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB569489C665DEECFB8E1B33 /* Pods_Ali_Acro_Ali_AcroUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +105,8 @@
 				0D255AAC2680FE0200964913 /* Ali AcroTests */,
 				0D255AB72680FE0200964913 /* Ali AcroUITests */,
 				0D255A942680FE0000964913 /* Products */,
+				261BC0E1B29C12E7E84D7625 /* Pods */,
+				7FEE1D95E9D05DF3AED510D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,7 +130,6 @@
 				0D255AC82680FF8900964913 /* Controller */,
 				0D255AC72680FF7100964913 /* Networking */,
 				0D255AC62680FF5600964913 /* Utilities */,
-				0D255A9A2680FE0000964913 /* ViewController.swift */,
 				0D255AA42680FE0200964913 /* Info.plist */,
 			);
 			path = "Ali Acro";
@@ -133,6 +156,7 @@
 		0D255AC62680FF5600964913 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				0D6860CD268102AE004A52C2 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -140,6 +164,7 @@
 		0D255AC72680FF7100964913 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				0D6860CF2681041D004A52C2 /* API.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -147,6 +172,7 @@
 		0D255AC82680FF8900964913 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0D255A9A2680FE0000964913 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -163,6 +189,7 @@
 		0D255ACA2680FF9600964913 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D6860D1268104E7004A52C2 /* AcroModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +211,29 @@
 			path = General;
 			sourceTree = "<group>";
 		};
+		261BC0E1B29C12E7E84D7625 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AB48DC77557504FE2151809 /* Pods-Ali Acro.debug.xcconfig */,
+				43466626A10B0F4E995DFDF5 /* Pods-Ali Acro.release.xcconfig */,
+				7256A9342C9ADE75BE9602C4 /* Pods-Ali Acro-Ali AcroUITests.debug.xcconfig */,
+				9930A125BC9E2E8D65421304 /* Pods-Ali Acro-Ali AcroUITests.release.xcconfig */,
+				80B99002E49481562D066F59 /* Pods-Ali AcroTests.debug.xcconfig */,
+				2FA3E8D0D24BE609CD5443C7 /* Pods-Ali AcroTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7FEE1D95E9D05DF3AED510D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D1D4FAA5C072986F308CBF4 /* Pods_Ali_Acro.framework */,
+				468A41F58E7689F586ACA569 /* Pods_Ali_Acro_Ali_AcroUITests.framework */,
+				A3E21BA9F846FFA5EDD311A7 /* Pods_Ali_AcroTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,6 +241,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D255ABD2680FE0200964913 /* Build configuration list for PBXNativeTarget "Ali Acro" */;
 			buildPhases = (
+				23E126F702772697DF952544 /* [CP] Check Pods Manifest.lock */,
 				0D255A8F2680FE0000964913 /* Sources */,
 				0D255A902680FE0000964913 /* Frameworks */,
 				0D255A912680FE0000964913 /* Resources */,
@@ -208,6 +259,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D255AC02680FE0200964913 /* Build configuration list for PBXNativeTarget "Ali AcroTests" */;
 			buildPhases = (
+				BD759F1781067B73585AF658 /* [CP] Check Pods Manifest.lock */,
 				0D255AA52680FE0200964913 /* Sources */,
 				0D255AA62680FE0200964913 /* Frameworks */,
 				0D255AA72680FE0200964913 /* Resources */,
@@ -226,9 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D255AC32680FE0200964913 /* Build configuration list for PBXNativeTarget "Ali AcroUITests" */;
 			buildPhases = (
+				54F748916CE4DDD1810811F1 /* [CP] Check Pods Manifest.lock */,
 				0D255AB02680FE0200964913 /* Sources */,
 				0D255AB12680FE0200964913 /* Frameworks */,
 				0D255AB22680FE0200964913 /* Resources */,
+				F3FFD0B360409EE521BC8156 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,14 +363,103 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23E126F702772697DF952544 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ali Acro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54F748916CE4DDD1810811F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ali Acro-Ali AcroUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD759F1781067B73585AF658 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ali AcroTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3FFD0B360409EE521BC8156 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ali Acro-Ali AcroUITests/Pods-Ali Acro-Ali AcroUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ali Acro-Ali AcroUITests/Pods-Ali Acro-Ali AcroUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ali Acro-Ali AcroUITests/Pods-Ali Acro-Ali AcroUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D255A8F2680FE0000964913 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D6860D2268104E7004A52C2 /* AcroModel.swift in Sources */,
 				0D255A9B2680FE0000964913 /* ViewController.swift in Sources */,
 				0D255A972680FE0000964913 /* AppDelegate.swift in Sources */,
+				0D6860CE268102AE004A52C2 /* Constants.swift in Sources */,
 				0D255A992680FE0000964913 /* SceneDelegate.swift in Sources */,
+				0D6860D02681041D004A52C2 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +499,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0D255A9D2680FE0000964913 /* Base */,
+				0D6860D426810FBC004A52C2 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -489,6 +633,7 @@
 		};
 		0D255ABE2680FE0200964913 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AB48DC77557504FE2151809 /* Pods-Ali Acro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -508,6 +653,7 @@
 		};
 		0D255ABF2680FE0200964913 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43466626A10B0F4E995DFDF5 /* Pods-Ali Acro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -527,6 +673,7 @@
 		};
 		0D255AC12680FE0200964913 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80B99002E49481562D066F59 /* Pods-Ali AcroTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -549,6 +696,7 @@
 		};
 		0D255AC22680FE0200964913 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FA3E8D0D24BE609CD5443C7 /* Pods-Ali AcroTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -571,6 +719,7 @@
 		};
 		0D255AC42680FE0200964913 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7256A9342C9ADE75BE9602C4 /* Pods-Ali Acro-Ali AcroUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -591,6 +740,7 @@
 		};
 		0D255AC52680FE0200964913 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9930A125BC9E2E8D65421304 /* Pods-Ali Acro-Ali AcroUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

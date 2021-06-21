@@ -1,0 +1,6 @@
+framework module Pods_Ali_Acro_Ali_AcroUITests {
+  umbrella header "Pods-Ali Acro-Ali AcroUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
