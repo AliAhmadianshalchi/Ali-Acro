@@ -36,8 +36,7 @@ struct API {
             
             if data != nil {
                 do {
-                    let decoder = JSONDecoder()
-                    let models = try decoder.decode([AcroModel].self, from: data!)
+                    let models = try JSONDecoder().decode([AcroModel].self, from: data!)
                     if models.count < 1 {
                         completionHandler(nil)
                         return

@@ -12,18 +12,13 @@ struct AcroModel: Codable {
     var sf: String?
     var lfs: [Lfs]
     
-    init(sf: String,lfs: [Lfs]){
-        self.sf = sf
-        self.lfs = lfs
-    }
-    
 }
 
 struct Lfs: Codable {
     
     var lf: String = ""
-    var frequency: Int
-    var year: Int
+    var freq: Int
+    var since: Int
     
 }
 

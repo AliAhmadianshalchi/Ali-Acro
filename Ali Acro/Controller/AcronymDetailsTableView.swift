@@ -41,14 +41,14 @@ extension AcronymDetailsTableView {
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath) as! DetailCell
         
         cell.ifLabel.text = "lfs: \(acroModel!.lfs[indexPath.row].lf)"
-        cell.frequencyLabel.text = "freq: \(acroModel!.lfs[indexPath.row].frequency)"
-        cell.yearLabel.text = "since: \(acroModel!.lfs[indexPath.row].year)"
+        cell.frequencyLabel.text = "freq: \(acroModel!.lfs[indexPath.row].freq)"
+        cell.yearLabel.text = "since: \(acroModel!.lfs[indexPath.row].since)"
         
         return cell
     }
 
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 129
+        return 140
     }
 }
