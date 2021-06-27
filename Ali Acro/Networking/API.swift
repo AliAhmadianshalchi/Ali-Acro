@@ -16,7 +16,7 @@ struct API {
             return
         }
         
-        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 5)
+        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)

@@ -18,6 +18,8 @@
 		0D6860CE268102AE004A52C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6860CD268102AE004A52C2 /* Constants.swift */; };
 		0D6860D02681041D004A52C2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6860CF2681041D004A52C2 /* API.swift */; };
 		0D6860D2268104E7004A52C2 /* AcroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6860D1268104E7004A52C2 /* AcroModel.swift */; };
+		0D6860D6268121DF004A52C2 /* AcronymDetailsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6860D5268121DF004A52C2 /* AcronymDetailsTableView.swift */; };
+		0DB183EC2688EDF000B5A581 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB183EB2688EDF000B5A581 /* DetailCell.swift */; };
 		82A82FEC43BC67850E3306D7 /* Pods_Ali_AcroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E21BA9F846FFA5EDD311A7 /* Pods_Ali_AcroTests.framework */; };
 		A0806ECAE305A3D2368B2827 /* Pods_Ali_Acro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D1D4FAA5C072986F308CBF4 /* Pods_Ali_Acro.framework */; };
 		AB569489C665DEECFB8E1B33 /* Pods_Ali_Acro_Ali_AcroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468A41F58E7689F586ACA569 /* Pods_Ali_Acro_Ali_AcroUITests.framework */; };
@@ -60,6 +62,8 @@
 		0D6860CF2681041D004A52C2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		0D6860D1268104E7004A52C2 /* AcroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcroModel.swift; sourceTree = "<group>"; };
 		0D6860D426810FBC004A52C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		0D6860D5268121DF004A52C2 /* AcronymDetailsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymDetailsTableView.swift; sourceTree = "<group>"; };
+		0DB183EB2688EDF000B5A581 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		2FA3E8D0D24BE609CD5443C7 /* Pods-Ali AcroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ali AcroTests.release.xcconfig"; path = "Target Support Files/Pods-Ali AcroTests/Pods-Ali AcroTests.release.xcconfig"; sourceTree = "<group>"; };
 		43466626A10B0F4E995DFDF5 /* Pods-Ali Acro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ali Acro.release.xcconfig"; path = "Target Support Files/Pods-Ali Acro/Pods-Ali Acro.release.xcconfig"; sourceTree = "<group>"; };
 		468A41F58E7689F586ACA569 /* Pods_Ali_Acro_Ali_AcroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ali_Acro_Ali_AcroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				0D255A9A2680FE0000964913 /* ViewController.swift */,
+				0D6860D5268121DF004A52C2 /* AcronymDetailsTableView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			children = (
 				0D255A9C2680FE0000964913 /* Main.storyboard */,
 				0D255AA12680FE0200964913 /* LaunchScreen.storyboard */,
+				0DB183EB2688EDF000B5A581 /* DetailCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -457,8 +463,10 @@
 				0D6860D2268104E7004A52C2 /* AcroModel.swift in Sources */,
 				0D255A9B2680FE0000964913 /* ViewController.swift in Sources */,
 				0D255A972680FE0000964913 /* AppDelegate.swift in Sources */,
+				0D6860D6268121DF004A52C2 /* AcronymDetailsTableView.swift in Sources */,
 				0D6860CE268102AE004A52C2 /* Constants.swift in Sources */,
 				0D255A992680FE0000964913 /* SceneDelegate.swift in Sources */,
+				0DB183EC2688EDF000B5A581 /* DetailCell.swift in Sources */,
 				0D6860D02681041D004A52C2 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,13 +24,6 @@ struct Lfs: Codable {
     var lf: String = ""
     var frequency: Int
     var year: Int
-    var variables: [Variables]
     
 }
 
-struct Variables: Codable {
-    
-    var lf: String = ""
-    var freq: Int
-    var since: Int
-}

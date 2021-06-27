@@ -16,16 +16,45 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupUIComponents()
     }
     
+    fileprivate func setupUIComponents() {
+        self.searchButton.layer.cornerRadius = 10
+        self.searchTextField.layer.cornerRadius = 30
+    }
+    
+    fileprivate func showNoMatchesFoundAlert() {
+        let alert = UIAlertController(title: "Atention", message: "No matches found. Please try again.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Oki", style: .default, handler: { (_) in}))
+        self.present(alert, animated: true, completion: nil)
+    }
     
     @IBAction func searchButtonPressed(_ sender: UIButton) {
         
+        guard let acronym = self.searchTextField.text else {
+            return
+        }
+        
+        API.getAcroDef(acronym: acronym) { (AcroModel) in
+        
+            guard let acroModel = AcroModel else {
+                DispatchQueue.main.async {
+                    self.showNoMatchesFoundAlert()
+                }
+                return
+            }
+            
+            DispatchQueue.main.async {
+                let acronymDefinitionVC = self.storyboard?.instantiateViewController(withIdentifier: "DetailsTableView") as! AcronymDetailsTableView
+                let navigationController = UINavigationController(rootViewController: acronymDefinitionVC)
+                acronymDefinitionVC.acroModel = acroModel
+                self.present(navigationController, animated: true, completion: nil)
+            }
         
         
     }
     
 
 }
-
+}
