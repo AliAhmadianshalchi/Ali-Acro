@@ -5,7 +5,8 @@
 //  Created by Ali Ahmadian on 21/06/2021.
 //
 
-import XCTest
+import Quick
+import Nimble
 @testable import Ali_Acro
 
 class Ali_AcroTests: XCTestCase {
