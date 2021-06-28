@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct API {
+class API {
     
     static public func getAcroDef(acronym: String,completionHandler: @escaping (_ definitions: AcroModel?) -> Void){
         
