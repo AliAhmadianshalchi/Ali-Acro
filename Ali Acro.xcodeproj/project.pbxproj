@@ -128,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				0D255ACC2680FFE100964913 /* General */,
-				0D255ACB2680FFD200964913 /* ViewModel */,
 				0D255ACA2680FF9600964913 /* Model */,
 				0D255AC92680FF9000964913 /* View */,
 				0D255AC82680FF8900964913 /* Controller */,
@@ -198,13 +197,6 @@
 				0D6860D1268104E7004A52C2 /* AcroModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		0D255ACB2680FFD200964913 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		0D255ACC2680FFE100964913 /* General */ = {
