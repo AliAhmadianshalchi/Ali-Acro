@@ -7,15 +7,9 @@ target 'Ali Acro' do
 
   # Pods for Ali Acro
 
-  pod 'Quick'
-  pod 'Nimble'
-  
   target 'Ali AcroTests' do
     inherit! :search_paths
     # Pods for testing
-    
-    pod 'Quick'
-    pod 'Nimble'
   end
 
   target 'Ali AcroUITests' do
