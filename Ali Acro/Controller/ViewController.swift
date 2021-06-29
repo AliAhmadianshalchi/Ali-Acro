@@ -24,8 +24,8 @@ class ViewController: UIViewController {
         self.searchTextField.layer.cornerRadius = 30
     }
     
-    fileprivate func showNoMatchesFoundAlert() {
-        let alert = UIAlertController(title: "Atention", message: "No matches found. Please try again.", preferredStyle: .alert)
+    fileprivate func showNoMatchesFoundAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Oki", style: .default, handler: { (_) in}))
         self.present(alert, animated: true, completion: nil)
     }
@@ -36,11 +36,11 @@ class ViewController: UIViewController {
             return
         }
         
-        API.getAcroDef(acronym: acronym) { (acroModel) in
+        API<AcroModel>.getAcroDef(acronym: acronym) { (acroModel) in
         
             guard let acroModel = acroModel else {
                 DispatchQueue.main.async {
-                    self.showNoMatchesFoundAlert()
+                    self.showNoMatchesFoundAlert(title: "Atention", message: "No matches found. Please try again.")
                 }
                 return
             }
@@ -53,8 +53,13 @@ class ViewController: UIViewController {
             }
         
         
-    }
+        } failureClosure: { error in
+            self.showNoMatchesFoundAlert(title: "Error" , message: "something went wrong")
+            return
+        }
     
 
 }
+    
+    
 }

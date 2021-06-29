@@ -7,30 +7,34 @@
 
 import Foundation
 
-class API {
+public enum ErrorType: Error , Equatable {
+    case connecctionError , serviceError , mappingError , formatError
+}
+
+
+class API<ResponseModel: Codable> {
     
-    static public func getAcroDef(acronym: String,completionHandler: @escaping (_ definitions: AcroModel?) -> Void){
+    static public func getAcroDef(acronym: String,successClosure: @escaping (_ definitions: AcroModel?) -> Void,failureClosure: @escaping (_ definitions: ErrorType?) -> Void){
         
         guard let url = URL(string: Constants.ACRO_URL + "\(acronym)") else {
-            completionHandler(nil)
+            failureClosure(ErrorType.mappingError)
             return
         }
         
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
-        
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
         
         session.dataTask(with: request) { (data , response , error) in
             
             if let _ = error {
-                completionHandler(nil)
+                failureClosure(ErrorType.serviceError)
                 return
             }
             
             let httpResponse = response as! HTTPURLResponse
             if httpResponse.statusCode != 200 {
-                completionHandler(nil)
+                failureClosure(ErrorType.serviceError)
                 return
             }
             
@@ -38,12 +42,12 @@ class API {
                 do {
                     let models = try JSONDecoder().decode([AcroModel].self, from: data!)
                     if models.count < 1 {
-                        completionHandler(nil)
+                        failureClosure(ErrorType.formatError)
                         return
                     }
-                    completionHandler(models[0])
+                    successClosure(models[0])
                 } catch {
-                    completionHandler(nil)
+                    failureClosure(ErrorType.formatError)
                     return
                 }
             }
