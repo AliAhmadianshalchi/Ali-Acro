@@ -30,8 +30,10 @@ class AcroTests: QuickSpec {
                 
                 it("the response value should not be nil"){
                     
-                    API.getAcroDef(acronym: self.fakeAcro) { response in
+                    API<AcroModel>.getAcroDef(acronym: self.fakeAcro) { response in
                         expect(response).notTo(beNil())
+                    } failureClosure: { error in
+                        fail()
                     }
                     
                 }

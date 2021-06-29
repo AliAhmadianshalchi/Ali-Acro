@@ -64,7 +64,6 @@
 		0D6860D1268104E7004A52C2 /* AcroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcroModel.swift; sourceTree = "<group>"; };
 		0D6860D426810FBC004A52C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		0D6860D5268121DF004A52C2 /* AcronymDetailsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymDetailsTableView.swift; sourceTree = "<group>"; };
-		0D7E56F1268AA04700CF1D3E /* Ali Acro copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Ali Acro copy-Info.plist"; path = "/Users/aliahmadian/Developer/Ali Acro/Ali Acro copy-Info.plist"; sourceTree = "<absolute>"; };
 		0D7E56F3268AA12F00CF1D3E /* AcroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcroTests.swift; sourceTree = "<group>"; };
 		0DB183EB2688EDF000B5A581 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		2FA3E8D0D24BE609CD5443C7 /* Pods-Ali AcroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ali AcroTests.release.xcconfig"; path = "Target Support Files/Pods-Ali AcroTests/Pods-Ali AcroTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,7 +119,6 @@
 				0D255A942680FE0000964913 /* Products */,
 				261BC0E1B29C12E7E84D7625 /* Pods */,
 				7FEE1D95E9D05DF3AED510D0 /* Frameworks */,
-				0D7E56F1268AA04700CF1D3E /* Ali Acro copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
