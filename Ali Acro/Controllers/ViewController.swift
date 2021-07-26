@@ -39,9 +39,8 @@ class ViewController: UIViewController {
         API<AcroModel>.getAcroDef(acronym: acronym) { (acroModel) in
         
             guard let acroModel = acroModel else {
-                DispatchQueue.main.async {
-                    self.showNoMatchesFoundAlert(title: "Atention", message: "No matches found. Please try again.")
-                }
+                self.showNoMatchesFoundAlert(title: "Atention", message: "No matches found. Please try again.")
+                
                 return
             }
             

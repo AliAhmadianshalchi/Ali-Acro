@@ -9,16 +9,18 @@ import Foundation
 
 struct AcroModel: Codable {
     
-    var sf: String?
-    var lfs: [Lfs]
+    var sf: String
+    var lfs: [LF]
     
 }
 
-struct Lfs: Codable {
+struct LF: Codable {
     
-    var lf: String = ""
+    var lf: String
     var freq: Int
     var since: Int
     
 }
+
+
 
