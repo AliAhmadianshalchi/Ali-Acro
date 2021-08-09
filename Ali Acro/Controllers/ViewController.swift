@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     
     @IBOutlet weak var searchTextField: UITextField!
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
             return
         }
         
-        API<AcroModel>.getAcroDef(acronym: acronym) { (acroModel) in
+        WebService<AcroModel>().getAcroDef(acronym: acronym) { (acroModel) in
         
             guard let acroModel = acroModel else {
                 self.showNoMatchesFoundAlert(title: "Atention", message: "No matches found. Please try again.")

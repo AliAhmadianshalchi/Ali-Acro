@@ -16,7 +16,7 @@ class AcronymDetailsTableView: UITableViewController {
         self.setup()
     
     }
-    
+    //si existe o no sf
     fileprivate func setup() {
         if let sf = acroModel?.sf {
             self.navigationController?.navigationBar.topItem?.title = "\(sf)"
@@ -34,12 +34,13 @@ extension AcronymDetailsTableView {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return acroModel!.lfs.count
+        return acroModel!.lfs.count //VM
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath) as! DetailCell
-        
+        //VM getLFs(indexpath: Int) -> Lfs {
+//    }
         cell.ifLabel.text = "lfs: \(acroModel!.lfs[indexPath.row].lf)"
         cell.frequencyLabel.text = "freq: \(acroModel!.lfs[indexPath.row].freq)"
         cell.yearLabel.text = "since: \(acroModel!.lfs[indexPath.row].since)"

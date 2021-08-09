@@ -8,38 +8,31 @@
 import Foundation
 import UIKit
 
-struct AcroViewModel {
-    
-    var acroModel: AcroModel
-    
-    var sf: String {
-        return acroModel.sf
-    }
-    
-    var lfs: [LF] {
-        return acroModel.lfs
-    }
+struct AcroListViewModel {
+    // TODO
+    var service = WebService<AcroModel>()
+    let acroModels: [AcroModel]
 
+    func numberOfRowsInSection(_ section: Int) -> Int {
+        return self.acroModels.count
+    }
     
+    func articleAtIndex(_ index: Int) -> AcroModel {
+        let acro = self.acroModels[index]
+        return acro
+    }
     
+    var numberOfSections: Int {
+        return 1
+    }
     
-    
+  
 }
 
-struct AcroLfsViewModel {
+
+struct AcroViewModel {
     
-    var AcroLfs: LF
+    private let acro: AcroModel
     
-    var lf: String {
-        return AcroLfs.lf
-    }
-    
-    var freq: Int {
-        return AcroLfs.freq
-    }
-    
-    var since: Int {
-        return AcroLfs.since
-    }
 }
 

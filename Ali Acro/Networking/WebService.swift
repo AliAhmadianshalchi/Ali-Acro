@@ -11,10 +11,14 @@ public enum ErrorType: Error , Equatable {
     case connecctionError , serviceError , mappingError , formatError
 }
 
+protocol WebServiceProtocol {
+    func getAcroDef(acronym: String,successClosure: @escaping (_ definitions: AcroModel?) -> Void,failureClosure: @escaping (_ definitions: ErrorType?) -> Void)
+}
 
-class API<ResponseModel: Codable> {
+
+final class WebService<ResponseModel: Codable> {
     
-    static public func getAcroDef(acronym: String,successClosure: @escaping (_ definitions: AcroModel?) -> Void,failureClosure: @escaping (_ definitions: ErrorType?) -> Void){
+    func getAcroDef(acronym: String,successClosure: @escaping (_ definitions: AcroModel?) -> Void,failureClosure: @escaping (_ definitions: ErrorType?) -> Void) {
         
         guard let url = URL(string: Constants.ACRO_URL + "\(acronym)") else {
             failureClosure(ErrorType.mappingError)

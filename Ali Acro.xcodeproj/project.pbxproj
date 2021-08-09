@@ -14,7 +14,7 @@
 		0D255AA02680FE0200964913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D255A9F2680FE0200964913 /* Assets.xcassets */; };
 		0D255AA32680FE0200964913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D255AA12680FE0200964913 /* LaunchScreen.storyboard */; };
 		0D6860CE268102AE004A52C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6860CD268102AE004A52C2 /* Constants.swift */; };
-		0D6860D02681041D004A52C2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6860CF2681041D004A52C2 /* API.swift */; };
+		0D6860D02681041D004A52C2 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6860CF2681041D004A52C2 /* WebService.swift */; };
 		0D6860D2268104E7004A52C2 /* AcroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6860D1268104E7004A52C2 /* AcroModel.swift */; };
 		0D6860D6268121DF004A52C2 /* AcronymDetailsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6860D5268121DF004A52C2 /* AcronymDetailsTableView.swift */; };
 		0D7E56F4268AA12F00CF1D3E /* AcroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7E56F3268AA12F00CF1D3E /* AcroTests.swift */; };
@@ -46,7 +46,7 @@
 		0D255AA42680FE0200964913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D255AA92680FE0200964913 /* Ali AcroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ali AcroTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6860CD268102AE004A52C2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		0D6860CF2681041D004A52C2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		0D6860CF2681041D004A52C2 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		0D6860D1268104E7004A52C2 /* AcroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcroModel.swift; sourceTree = "<group>"; };
 		0D6860D426810FBC004A52C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		0D6860D5268121DF004A52C2 /* AcronymDetailsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymDetailsTableView.swift; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 		0D255AC72680FF7100964913 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				0D6860CF2681041D004A52C2 /* API.swift */,
+				0D6860CF2681041D004A52C2 /* WebService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -393,7 +393,7 @@
 				0D6860CE268102AE004A52C2 /* Constants.swift in Sources */,
 				0D255A992680FE0000964913 /* SceneDelegate.swift in Sources */,
 				0DB183EC2688EDF000B5A581 /* DetailCell.swift in Sources */,
-				0D6860D02681041D004A52C2 /* API.swift in Sources */,
+				0D6860D02681041D004A52C2 /* WebService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
